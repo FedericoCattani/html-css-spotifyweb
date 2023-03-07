@@ -20,8 +20,8 @@ body{
 }
 
 .container{
-  width: 100%;
-  height: 500px;
+  width: 85%;
+  height: 100%;
   background-color: burlywood;
 }
 
@@ -42,9 +42,11 @@ header{
   position: sticky;
   top: 0;
   z-index: 999;
+
   height: 80px;
   width: 100%;
   background-color: rgba(8, 11, 18, 0.6);
+
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -57,4 +59,54 @@ header{
   color: var(--color-text);
 }
 
+.logo{
+  z-index: 998;
+  height: 80%;
+  width: 20%;
+  background-image: url(../img/logo.svg);
+  background-repeat: no-repeat;
+}
 
+/***************************************************************
+MAIN
+***************************************************************/
+main{
+  display: flex;
+  justify-content: flex-end;
+  overflow: auto;
+  
+}
+
+
+.container-menu{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 15%;
+  height: 100%;
+  background-color: aliceblue;
+}
+
+
+
+
+/***************************************************************
+FOOTER
+***************************************************************/
+
+footer{
+  height: 80px;
+  width: 100%;
+  background-color: #282828;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+
+
+
+/***************************************************************
+RESPONSIVE
+***************************************************************/
