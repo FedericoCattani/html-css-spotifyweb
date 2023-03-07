@@ -52,7 +52,6 @@ header{
   align-items: center;
 }
 
-
 .btn-header{
   text-align: center;
   margin-right: 50px;
@@ -76,7 +75,6 @@ main{
   overflow: auto;
   
 }
-
 
 .container-menu{
   position: fixed;
