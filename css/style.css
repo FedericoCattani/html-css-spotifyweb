@@ -1,0 +1,20 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/***************************************************************
+GENERAL
+***************************************************************/
+:root{
+  --primary-color:#141922;
+  --color-h2: white;
+  --text-description:#787A7F;
+}
+
+body{
+  font-family: CircularSp,CircularSp-Arab,CircularSp-Hebr,CircularSp-Cyrl,CircularSp-Grek,CircularSp-Deva,sans-serif;
+}
+
