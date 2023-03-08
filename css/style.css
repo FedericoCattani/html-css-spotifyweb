@@ -24,6 +24,10 @@ body{
   min-height: 50px;
 }
 
+a{
+  text-decoration: none;
+}
+
 /***************************************************************
 MAIN
 ***************************************************************/
@@ -40,32 +44,50 @@ MAIN
   height: 90px;
   width: calc(100% - 230px);
 
-  background-color: rgba(8, 11, 18, 0.5);
+  background-color: rgba(8, 11, 18, 0.7);
 }
 
 .cta button{
   position: absolute;
-  right: 35px;
-  top: 30px;
+  right: 25px;
+  top: 26px;
   
   border-radius: 30px;
   border: 1px solid white;
-  background-color: rgba(8, 11, 18, 0.5);
+  background-color: rgba(8, 11, 18, 0.7);
   padding: 10px 45px;
+
+  cursor: pointer;
+}
+
+.cta button:hover{
+  background-color: lightgray;
+  
+  border: 2px grey solid;
+  
 }
 
 .cta a{
-  text-decoration: none;
   text-transform: uppercase;
   text-align: center; 
   
   color: white;
 }
 
+.cta a:hover{
+  color: #000000;
+}
+
+
+
 main{
   display: flex;
   height: calc(100% - 90px);
 }
+
+/***************************************************************
+ASIDE
+***************************************************************/
 
 aside{
   width: 230px;
@@ -74,6 +96,51 @@ aside{
 
   background-color: #000000;
 }
+
+/***LOGO***/
+
+.logo img{
+  margin: 17px 20px;
+  width: 65%;
+}
+
+.logo .logo-small{
+  display: none;
+  width: 35px;
+}
+
+/***ASIDE CTA***/
+
+.aside-container{
+  height: 80%;
+  width: 80%;
+  background-color: wheat;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.aside-nav{
+  height: calc(100% / 3);
+  width: 80%;
+  background-color: cornflowerblue;
+}
+
+.aside-nav a{
+  color: var(--text-description);
+}
+
+.aside-nav a img{
+  display: inline;
+  max-width: 30px;
+  color: var(--text-description);
+  text-align: center;
+}
+
+
+
+
+
 
 .content{
   width: 100%;
@@ -97,3 +164,14 @@ aside{
 /***************************************************************
 RESPONSIVE
 ***************************************************************/
+
+@media screen and (max-width:600px) {
+
+  .logo img{
+   display: none;
+  }
+
+  .logo .logo-small{
+    display: block;
+  }
+}
