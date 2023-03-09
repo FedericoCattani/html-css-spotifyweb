@@ -38,6 +38,13 @@ a{
   text-decoration: none;
 }
 
+/*.structure-cards img{
+  width: 100%;
+  height: 50%;
+  text-align: center;
+  object-fit: cover;
+}*/
+
 /***************************************************************
 MAIN
 ***************************************************************/
@@ -166,12 +173,12 @@ aside{
 }
 
 .list-playlist{
-  padding-top: 10px;
+  padding-top: 12px;
 }
 
 .list-playlist a{
   color: var(--text-description);
-  line-height: 30px;
+  line-height: 32px;
 }
 
 /***ASIDE CTA ACCOUNT***/
@@ -215,7 +222,7 @@ aside{
   color: var(--color-text);
 }
 
-
+/***CONTENT**/
 
 .content{
   width: 100%;
@@ -225,7 +232,92 @@ aside{
   background-color: var(--primary-color);
   color: var(--color-text);
   overflow-y: auto;
+ 
 }
+
+/***NAV**/
+
+.content .content-nav{
+  height: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.content-nav li{
+  display: inline-block;
+  padding: 20px 25px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: bold;
+  color: var(--text-description);
+}
+
+/***CARDS**/
+
+.structure-cards{
+  height: 90%;
+  width: 100%; 
+ 
+}
+
+.structure-cards h3{
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+.structure-cards p{
+  margin-top: 10px;
+  margin-left: 15px;
+  color: var(--text-description);
+  font-size: 12px;
+}
+
+.structure-cards .container-cards {
+  width: 100%;
+  height: calc(100% / 3);
+  display: flex;
+  flex-wrap: nowrap;
+  margin-bottom: 100px;
+  margin-top: 30px;
+  
+}
+
+.cards{
+  height: 100%;
+  width: calc(100% / 6);
+  background-color: green;
+  border: 1px solid black;
+  text-align: center;
+  margin-left: 15px ;
+  
+}
+
+.cards,.circle img{
+  border-radius: 50%;
+}
+
+.cards span h4{
+  line-height: 20px;
+}
+
+.cards span h6{
+  color: var(--text-description);
+  margin-top: 10px;
+}
+
+.cards img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+
+
+
 
 .player{
   height: 90px;
