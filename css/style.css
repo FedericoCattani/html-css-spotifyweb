@@ -166,6 +166,7 @@ aside{
 
 .playlists span{
   color: var(--text-description);
+  cursor: pointer;
 }
 
 .playlists  i{
