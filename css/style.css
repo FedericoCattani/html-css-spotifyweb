@@ -26,8 +26,8 @@ body{
 
 .d-flex{
   display: flex;
+  justify-content: center;
   
-  align-items: center;
 }
 
 li{
@@ -38,12 +38,9 @@ a{
   text-decoration: none;
 }
 
-/*.structure-cards img{
-  width: 100%;
-  height: 50%;
-  text-align: center;
-  object-fit: cover;
-}*/
+i{
+  cursor: pointer;
+}
 
 /***************************************************************
 MAIN
@@ -124,6 +121,11 @@ aside{
 .logo .logo-small{
   display: none;
   width: 35px;
+
+}
+
+.logo{
+  cursor: pointer;
 }
 
 /***ASIDE CTA***/
@@ -294,6 +296,10 @@ aside{
   
 }
 
+.cards{
+  cursor: pointer;
+}
+
 .cards,.circle img{
   border-radius: 50%;
 }
@@ -313,18 +319,56 @@ aside{
   object-fit: cover;
 }
 
-
-
-
-
-
+/***PLAYER BOTTOM**/
 
 .player{
   height: 90px;
   background-color: #282828;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-player{
+  width: 200px;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.container-player img{
+  width: 20%;
+  margin-left: 10px;
+}
+
+.container-player h5{
+  margin-left: 10px;
+  color: var(--color-text);
+}
+
+.container-player h6{
+  margin-left: 10px;
+  color: var(--text-description);
 }
 
 
+.container-player i{
+  margin-left: 30px;
+  color: var(--text-description);
+}
+
+.container-player i:nth-of-type(2){
+  margin-left: 20px;
+}
+
+.center{
+  width: 500px;
+}
+
+.center i{
+  color: var(--color-text);
+}
 
 
 
